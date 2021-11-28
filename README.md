@@ -9,8 +9,8 @@ Refer to the project's Branches for further information.
 [Elixir Documentation](https://elixir-lang.org/docs.html)
 
 ## Options and Commands
-`mix help` - Help list for the Mix build tool.  
+`mix help` - Help list for Mix build tool.  
 `mix run` - Starts and runs the current application.  
-`iex -h` - 
+`iex -h` - Elixir interactive shell (REPL: Read-Evaluate-Process-Loop)
 
 
