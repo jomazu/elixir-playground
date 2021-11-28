@@ -3,7 +3,7 @@
 
 Used with VS Code **Remote - Containers**, as a containerized Docker development environment.
 
-Refer to the project's Branches for further information.
+Refer to the project Branches for further information.
 
 ## GLOSSARY
 [Elixir Documentation](https://elixir-lang.org/docs.html)
