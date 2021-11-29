@@ -52,16 +52,15 @@
 
 ## Remember
 
-**Strings Can Be Called Binaries**
+**Strings Can Be Called Binaries**  
 Erlang uses sequences of bytes to represent strings. It considers this just another byte stream (binary data) and so calls these values **binaries**. This convention carries forward into Elixir, so don't be surprised to see the word **binary** where you were expecting **string**.
 
-**Function Names Ending With An Exclamation Mark**
+**Function Names Ending With An Exclamation Mark**  
 Often Elixir has two variants of a function, such as `File.read` and `File.read!`. Most of the time this means that the plain version will return an error status on failure, and the version with the shriek will raise an exception. This rule isn't universal, though, so check the documentation.
 
-**Functions Are Identified By Name/Arity**
+**Functions Are Identified By Name/Arity**  
 Elixir functions have a name (by convention lowercase letters, digits, and underscores, with a possible trailing `?` or `!`). They also have an **arity**: the number of parameters they take.
 
 Both the name and the arity are required to identify a particular function. We write the combination as **name/arity**: `String.split/1`, `String.split/2` and so on.
 
-**Values Are Not Objects**
-
+**Values Are Not Objects**  
