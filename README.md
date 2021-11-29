@@ -31,8 +31,22 @@
 * [Elixir Documentation](https://elixir-lang.org/docs.html)
 
 * `mix help` - Help list for Mix build tool.  
-* `mix run` - Starts and runs the current application.  
-* `iex -h` - Interactive shell help.  
-* `elixir -h` - Elixir help.  
+  * Within `iex`, type `h File.`, then hit the tab button to display a list of File functions.  
+  * Within `iex`, type, `h String.`, then hit the tab button to display a list of String functions.
 
+## Language Stuff
 
+* You group a chunk of Elixir code between the keywords `do` and `end` to delineate the body of a module, and the bodies of the function it contains.  
+* **FUNCTIONS** are defined using `def`, followed by the function name, any parameters, and the body in a `do` / `end` block.  
+* **MODULE NAMES** must be an Elixir **ATOM**. Conventionally, you use Capitalized words, such as `MyFirstModule`.  
+* **FUNCTION NAMES** are either names or one of the Elixir operators. Names must start with a lowercase letter or underscore, and may contain letters, digits, and underscores. The name may end with an exclamation point or a question mark.  
+* `IO.puts` writes a string to standard output.  
+
+## Tool Stuff
+
+* `mix` on its own compiles your project.  
+* `mix run` runs it, and `mix run <<code>>` executes the code in the context of your project.  
+* `iex -S mix` starts `iex` in the context of your project: it uses `mix` to build the application environment and then enters `iex`.  
+  * Inside `iex`, type `r <<ModuleName>>` to recompile the file containing ModuleName.  
+  * Inside `iex`, type `c <<lib/name.ex>>` to compile a given file.  
+*
