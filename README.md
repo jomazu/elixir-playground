@@ -1,6 +1,9 @@
-# Elixir - Development Container
-![elixir logo](https://elixir-lang.org/images/logo/logo.png)
+# Project
 
-Used with VS Code **Remote - Containers**, as a containerized Docker development environment.
+Hangman Application logic:
 
-Refer to the project Branches for further information.
+1. Pick random word.
+2. Accept a move.
+3. Score the move.
+4. Respond to player.
+
