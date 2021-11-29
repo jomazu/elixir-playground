@@ -64,3 +64,15 @@ Elixir functions have a name (by convention lowercase letters, digits, and under
 Both the name and the arity are required to identify a particular function. We write the combination as **name/arity**: `String.split/1`, `String.split/2` and so on.
 
 ***Values Are Not Objects***  
+In an object-oriented language, an object is typically associated with a class or a prototype. That class defines the methods that are supported by the object. In Ruby, for example, we could split a string using:  
+`"123\n456\n789\n".split(/\n/)`  
+Values in Elixir have a type, but the type does not attach functions to those values. Instead, you pass the value as a parameter to the appropriate function:  
+`String.split("123\n456\n789\n", ~r/\n/)`  
+
+***Functions Return The Last Expression Evaluated***  
+Functions exit by falling out the bottom - there is no explicit `return` keyword.  
+
+***Finding Functions***  
+Although types don't have associated functions, you'll find that the libraries in Elixir use naming conventions to make finding appropriate functions easier. For example, a string will typically be manipulated by functions in the `String` module (`String.split` and so). Similarly, lists are manipulated by functions in the `List` module.  
+
+Sometimes a set of functions applies to values of multiple types. For example, lists and maps are both collections of values - they can be enumerated. Functions to do with this shared behavior are in their own module (in this case `Enum`).  
