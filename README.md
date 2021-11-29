@@ -32,5 +32,7 @@
 
 * `mix help` - Help list for Mix build tool.  
 * `mix run` - Starts and runs the current application.  
-* `iex -h` - Elixir interactive shell (REPL: Read-Evaluate-Process-Loop)
+* `iex -h` - Interactive shell help.  
+* `elixir -h` - Elixir help.  
+
 
