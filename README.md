@@ -7,7 +7,7 @@
   * [Tree command with examples](https://www.geeksforgeeks.org/tree-command-unixlinux/)
 
 
-<img src="my-images/Elixir-logo.png" width="100">
+<img src="my-images/Elixir-logo.png" width="120">
 
 # ELIXIR
 
