@@ -28,7 +28,8 @@
 
 # ELIXIR Commands
 
-* [Elixir Documentation](https://elixir-lang.org/docs.html)
+* [Elixir Documentation](https://elixir-lang.org/docs.html)  
+* [Elixir Cheat Sheet](https://media.pragprog.com/titles/elixir/ElixirCheat.pdf)  
 
 * `mix help` - Help list for Mix build tool.  
   * Within `iex`, type `h File.`, then hit the tab button to display a list of File functions.  
