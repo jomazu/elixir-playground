@@ -103,4 +103,9 @@ Your main tools are **functional composition** and **pattern matching**.
 Composition means chaining together functions so that the output of one becomes the input of the next. In your code, pipelines are used to compose functions. Once joined, they act as if they are a single function.  
 
 ## Pattern Matching
-Pattern matching lets you write different versions of the same function. 
+Pattern matching lets you write different versions of the same function. The version that is called depends on the value that is passed in. Similar to the idea of overloaded methods in some OO languages. For instance, here is an inefficient implementation of a Fibonacci calculator written using pattern matching:  
+```
+def fib(0), do: 0
+def fib(1), do: 1
+def fib(n), do: fib(n-1) + fib(n-2)
+```
