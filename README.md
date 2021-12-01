@@ -107,9 +107,48 @@ Your main tools are **functional composition** and **pattern matching**.
 Composition means chaining together functions so that the output of one becomes the input of the next. In your code, pipelines are used to compose functions. Once joined, they act as if they are a single function.  
 
 ## Pattern Matching
-Pattern matching lets you write different versions of the same function. The version that is called depends on the value that is passed in. Similar to the idea of overloaded methods in some OO languages. For instance, here is an inefficient implementation of a Fibonacci calculator written using pattern matching:  
+Pattern matching lets you write different versions of the same function. The version that is called depends on the value that is passed in. Similar to the idea of overloaded methods in some OO languages.  
+
+## The Pipeline Operator, `|>`
+The `|>` operator is how you compose functions in Elixir. It takes the result of the expression on its left and injects it as the first parameter of the function call to its right.  
+
+This means that...  
+
 ```
-def fib(0), do: 0
-def fib(1), do: 1
-def fib(n), do: fib(n-1) + fib(n-2)
+"1-2-3" |> String.split("-")
 ```
+
+is the same as writing...  
+
+```
+String.split("1-2-3", "-")
+```
+
+Pipelines get more interesting when there are multiple steps. For example, to see how many values there are after the split, you could write:  
+
+```
+values = String.split("1-2-3", "-")
+IO.puts length(values)
+```
+
+or  
+
+```
+IO.puts length(String.split("1-2-3", "-"))
+```
+
+Try explaining to a non-programmer how to work out what gets done first in that code.  
+
+But, using pipelines, you can write:  
+
+```
+"1-2-3"
+|> String.split("-")
+|> length
+|> IO.puts
+```
+
+This is an elegant and clear set of transformations from a string, to a list, to an integer.  
+
+On the beginning of your journey with Elixir, try to make yourself use pipelines all the time. One way to motivate this is to try not to use local variables. You won't always succeed, as sometimes you just need to use them. But thinking about eliminating them will help to think in terms of **transformations** and **pipelines**.  
+
