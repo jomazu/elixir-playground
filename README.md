@@ -88,3 +88,19 @@ First, there's the coupling between state and behavior. In an ideal world, this 
 
 Second, there's confusion about roles. The state stored in a class is tied to the role implemented by that class. If you need to have it participate in other ways, you have to extend the class, perhaps with mixins or (heaven forbid!) subclassing. Yet more coupling.  
 
+Third (and in today's world probably the most significant issue) is the idea that methods mutate object state. In a concurrent system, if you have a reference to an object, you have no guarantees that the value of that object won't just change, even if you do nothing to it. Fixes usually encompass various synchronization techniques; it is difficult ("next to impossible") to verify that you did this correctly.  
+
+## Functions and State
+In the world of functional programming, state is decoupled from behavior. State is always immutable - it represents a fact that is true at some point in the life of your code.  
+
+Functions transform state into new state. They never change the state that's given to them. This means that ideal functions are **pure**: given a particular input, they will always produce the same output. In turn, this means that functions are easy to compose and reuse.  
+
+The goal when using a functional paradigm is to think out your program as one big function, transforming its inputs into outputs. Then breaking this down into progressively smaller functions, until you end up with a bunch of small functions; each function doing just one thing.  
+
+Your main tools are **functional composition** and **pattern matching**.  
+
+## Functional Composition
+Composition means chaining together functions so that the output of one becomes the input of the next. In your code, pipelines are used to compose functions. Once joined, they act as if they are a single function.  
+
+## Pattern Matching
+Pattern matching lets you write different versions of the same function. 
