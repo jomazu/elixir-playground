@@ -66,9 +66,13 @@ Both the name and the arity are required to identify a particular function. We w
 
 ***Values Are Not Objects***  
 In an object-oriented language, an object is typically associated with a class or a prototype. That class defines the methods that are supported by the object. In Ruby, for example, we could split a string using:  
-`"123\n456\n789\n".split(/\n/)`  
+```
+"123\n456\n789\n".split(/\n/)
+```  
 Values in Elixir have a type, but the type does not attach functions to those values. Instead, you pass the value as a parameter to the appropriate function:  
-`String.split("123\n456\n789\n", ~r/\n/)`  
+```
+String.split("123\n456\n789\n", ~r/\n/)
+```  
 
 ***Functions Return The Last Expression Evaluated***  
 Functions exit by falling out the bottom - there is no explicit `return` keyword.  
