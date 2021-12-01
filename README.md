@@ -80,4 +80,3 @@ Sometimes a set of functions applies to values of multiple types. For example, l
 
 # Thinking in Functions
 Values are transformed using functions, and the pipeline operator `|>` makes this explicit.  
-
