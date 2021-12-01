@@ -77,3 +77,7 @@ Functions exit by falling out the bottom - there is no explicit `return` keyword
 Although types don't have associated functions, you'll find that the libraries in Elixir use naming conventions to make finding appropriate functions easier. For example, a string will typically be manipulated by functions in the `String` module (`String.split` and so). Similarly, lists are manipulated by functions in the `List` module.  
 
 Sometimes a set of functions applies to values of multiple types. For example, lists and maps are both collections of values - they can be enumerated. Functions to do with this shared behavior are in their own module (in this case `Enum`).  
+
+# Thinking in Functions
+Values are transformed using functions, and the pipeline operator `|>` makes this explicit.  
+
