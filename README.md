@@ -80,3 +80,11 @@ Sometimes a set of functions applies to values of multiple types. For example, l
 
 # Thinking in Functions
 Values are transformed using functions, and the pipeline operator `|>` makes this explicit.  
+
+## OO has Methods, FP has Functions
+In object-oriented programming, you tell objects to change their state by invoking instance methods. This is convenient, but if you've been doing OO programming for a while, you know it has some drawbacks.  
+
+First, there's the coupling between state and behavior. In an ideal world, this wouldn't be a problem. But in the real world, you don't have tidy encapsulation like this. Instead, you find yourself constantly subclassing just so you can share methods.  
+
+Second, there's confusion about roles. The state stored in a class is tied to the role implemented by that class. If you need to have it participate in other ways, you have to extend the class, perhaps with mixins or (heaven forbid!) subclassing. Yet more coupling.  
+
