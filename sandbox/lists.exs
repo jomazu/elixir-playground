@@ -1,5 +1,11 @@
 defmodule Lists do
 
+# Load in into iex, by typing...
+# $ iex "lists.exs"
+# Then for example...
+# Lists.sum [2,3,5
+# > 10
+
 # [] = 0
 # [ 1, 3, 5 ] => 3
 
