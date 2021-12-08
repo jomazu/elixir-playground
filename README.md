@@ -13,6 +13,10 @@ $ mix new servy
 
 $ mix help
 ```
+
+`.ex` files are meant to be compiled, then run.  
+`.exs` files are effectively interpreted like scripts. 
+
 3.  High-Level Transformations
 4.  Pattern Matching
 5.  Immutable Data
