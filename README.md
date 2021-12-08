@@ -4,6 +4,11 @@ Developing with Elixir/OTP (Open Telecom Platform):
 
 1.  Introduction
 2.  Create Mix Project
+```elixir
+# The name of the new project is 'servy'
+
+$ mix new servy
+```
 3.  High-Level Transformations
 4.  Pattern Matching
 5.  Immutable Data
