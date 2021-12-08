@@ -8,6 +8,10 @@ Developing with Elixir/OTP (Open Telecom Platform):
 # The name of the new project is 'servy'
 
 $ mix new servy
+
+# List of Mix Tasks
+
+$ mix help
 ```
 3.  High-Level Transformations
 4.  Pattern Matching
